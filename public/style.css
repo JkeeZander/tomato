@@ -1,6 +1,9 @@
+html,
 body {
   margin: 0;
-  font-family: "Ubuntu", sans-serif;
+  padding: 0;
+  width: 100%;
+  font-family: "Nunito", sans-serif;
   background-color: rgba(255, 244, 230, 0.4);
 }
 
@@ -33,7 +36,7 @@ h1 {
   text-align: center;
   background-color: teal;
 }
-img {
+.navbar__logo {
   max-width: 80px;
   position: relative;
   top: -15px;
@@ -102,6 +105,7 @@ ul {
   max-width: 700px;
   margin: 0 auto;
   color: white;
+  padding: 0 10px;
 }
 
 /*Introduction part end*/
@@ -113,7 +117,7 @@ ul {
 .quality__container {
   margin: 0 auto;
   margin-bottom: 50px;
-  padding: 0 10px;
+  padding: 30px 10px;
   padding-bottom: 50px;
   border-bottom: 1px solid rgb(180, 180, 180);
   display: flex;
@@ -162,7 +166,7 @@ ul {
   justify-content: space-between;
   max-width: 1050px;
   width: 100%;
-  padding: 20px;
+  padding: 20px 0;
 }
 .info__image {
   max-height: 300px;
@@ -209,22 +213,24 @@ ul {
 .footer__copyright__center {
   margin: 0 auto;
 }
-.footer__copyright__links ul {
+.footer__links {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0;
+  font-size: 0.75rem;
 }
 .footer__element {
   padding: 5px 15px;
 }
 .footer__copyright__info {
   text-align: center;
+  font-size: 0.8rem;
 }
 
 /*footer part end*/
 
-@media (max-width: 660px) {
+@media (max-width: 790px) {
   /*navbar responsive*/
   .navbar__mobilemenu {
     position: absolute;
@@ -265,6 +271,7 @@ ul {
   /* info part responsive */
   .info__element {
     flex-direction: column;
+    align-items: center;
   }
   .info__image {
     margin: 0;
@@ -305,5 +312,9 @@ ul {
   }
   .footer__part {
     max-width: 340px;
+  }
+  .quality__container {
+    flex-direction: column;
+    align-items: center;
   }
 }
